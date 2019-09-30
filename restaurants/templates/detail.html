@@ -5,6 +5,15 @@
         <title>Detail</title>
     </head>
     <body>
-
+    	<h1> My Object </h1>
+    	{% for object in my_object %}
+    		<h4>
+    			{{ object.restaurant_name }}
+    		</h4>
+    			<h6>
+    				{{ object.food_type }}
+    			</h6>
+    	
+    	{% endfor %}
     </body>
 </html>
